@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cancel-tool.css">
+    <title>Document</title>
+</head>
+<body>
+   <!-- cancel-tool.html -->
+<div class="cancel-tool">
+  <h3>UNREQUEST FRIENDS FACEBOOK TOOL</h3>
+  <div class="stats">
+    <div class="count-box">
+      <div id="cancelCount" class="count">0</div>
+      <div class="count-label">Đã hủy</div>
+    </div>
+    <div class="count-box">
+      <div id="scrollCount" class="count">0</div>
+      <div class="count-label">Đã cuộn</div>
+    </div>
+  </div>
+  <div class="setting-row">
+    <label>Số lượng cần hủy:</label>
+    <input type="number" id="maxCancelCount" min="0" placeholder="Tất cả" />
+  </div>
+  <div class="setting-row">
+    <label>Tốc độ (ms):</label>
+    <select id="speedSetting">
+      <option value="3000">Chậm (3s)</option>
+      <option value="2000">Trung bình (2s)</option>
+      <option value="1000">Nhanh (1s)</option>
+      <option value="500">Rất nhanh (0.5s)</option>
+      <option value="200" selected>Siêu nhanh (0.2s)</option>
+    </select>
+  </div>
+  <div class="buttons">
+    <button id="startCancel" class="start-btn">Bắt Đầu</button>
+    <button id="stopCancel" class="stop-btn">Dừng Lại</button>
+  </div>
+  <div class="progress-bar">
+    <div id="progressBar" class="progress"></div>
+  </div>
+  <div id="statusText" class="status"></div>
+  <div id="logArea" class="log"></div>
+</div>
+ 
+</body>
+<script src="cancel-tool.js"></script>
+</html>

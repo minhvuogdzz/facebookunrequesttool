@@ -1,0 +1,125 @@
+.cancel-tool {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
+      background: linear-gradient(45deg, rgb(0, 0, 0), rgb(35, 137, 145));
+      color:rgb(4, 4, 4);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      font-family: Arial, sans-serif;
+      width: 300px;
+      transition: all 0.3s ease;
+      border: 1px solid #dddfe2;
+    }
+    .cancel-tool h3 {
+      margin: 0 0 15px 0;
+      font-size: 18px;
+      text-align: center;
+      border-bottom: 1px solid #dddfe2;
+      padding-bottom: 10px;
+      color:rgb(24, 187, 242);
+      font-weight: bold;
+    }
+    .cancel-tool .stats {
+      display: flex;
+      justify-content: space-between;
+      background: #f0f2f5;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    .cancel-tool .count-box {
+      text-align: center;
+    }
+    .cancel-tool .count {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1877f2;
+    }
+    .cancel-tool .count-label {
+      font-size: 12px;
+      color:rgb(0, 0, 0);
+      font-weight: 500;
+    }
+    .cancel-tool .setting-row {
+      margin: 12px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color:rgb(255, 255, 255);
+      font-weight: 500;
+    }
+    .cancel-tool select, .cancel-tool input {
+      background: #f0f2f5;
+      border: 1px solid #dddfe2;
+      padding: 8px 10px;
+      border-radius: 5px;
+      width: 130px;
+      font-size: 14px;
+      color: #333333;
+    }
+    .cancel-tool .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    .cancel-tool button {
+      border: none;
+      color: white;
+      padding: 12px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 48%;
+      transition: all 0.2s ease;
+      font-size: 15px;
+    }
+    .cancel-tool .start-btn {
+      background: #1877f2;
+    }
+    .cancel-tool .start-btn:hover {
+      background: #166fe5;
+    }
+    .cancel-tool .stop-btn {
+      background: #e41e3f;
+    }
+    .cancel-tool .stop-btn:hover {
+      background: #d41c3b;
+    }
+    .cancel-tool .progress-bar {
+      height: 6px;
+      background: #f0f2f5;
+      border-radius: 3px;
+      margin-top: 15px;
+      overflow: hidden;
+    }
+    .cancel-tool .progress {
+      height: 100%;
+      background: #1877f2;
+      width: 0%;
+      transition: width 0.5s ease;
+    }
+    .cancel-tool .status {
+      text-align: center;
+      font-size: 13px;
+      margin-top: 8px;
+      height: 15px;
+      color: #606770;
+      font-weight: 500;
+    }
+    .cancel-tool .log {
+      margin-top: 10px;
+      max-height: 100px;
+      overflow-y: auto;
+      font-size: 12px;
+      background: #f0f2f5;
+      padding: 8px;
+      border-radius: 5px;
+      color: #333333;
+      line-height: 1.4;
+    }
+    .cancel-tool .log div {
+      margin-bottom: 4px;
+    }
